@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BioShelf makes biology easier with clear lessons, study resources, and science quizzes for young learners.">
+  <title>BioShelf | Discover Life. Understand Science.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BioShelf home">
+      <span class="brand-mark">B<span>+</span></span>
+      <span>Bio<span class="brand-accent">Shelf</span><small>SCIENCE FOR EVERY CURIOUS MIND</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="navigation">
+      <a href="#learn">Learn</a>
+      <a href="#quizzes">Quizzes</a>
+      <a href="#library">Library</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#start">Start learning</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> YOUR DIGITAL BIOLOGY SHELF</p>
+        <h1>Big discoveries<br>start with <span>curiosity.</span></h1>
+        <p class="hero-text">Explore the science of life with clear biology lessons, useful study resources, and quizzes made for curious learners.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#learn">Explore lessons <span>→</span></a>
+          <a class="button button-light" href="#about">Meet BioShelf</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>B</span><span>DNA</span><span>+</span></div>
+          <p><strong>Built for curious minds</strong><br><small>Learn a little. Discover a lot.</small></p>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of biology and science">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="science-card card-top"><span>🧬</span><div><b>Genetics</b><small>The code of life</small></div></div>
+        <div class="dna-illustration">
+          <div class="dna-strand strand-a"></div><div class="dna-strand strand-b"></div>
+          <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i>
+        </div>
+        <div class="science-card card-bottom"><span>🔬</span><div><b>Explore science</b><small>One question at a time</small></div></div>
+        <span class="floating-leaf leaf-one">✳</span><span class="floating-leaf leaf-two">✦</span>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="BioShelf learning areas">
+      <div><strong>01</strong><span>Learn biology</span></div>
+      <div><strong>02</strong><span>Practice with quizzes</span></div>
+      <div><strong>03</strong><span>Discover resources</span></div>
+      <div><strong>∞</strong><span>Stay curious</span></div>
+    </section>
+
+    <section class="section learn-section" id="learn">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR LEARNING JOURNEY</p><h2>Explore the <span>living world.</span></h2></div>
+        <p>Start with the foundations, then follow your curiosity into the amazing details of life.</p>
+      </div>
+      <div class="lesson-grid">
+        <article class="lesson-card">
+          <div class="lesson-icon green">🌱</div><p class="card-label">BIOLOGY BASICS</p>
+          <h3>Introduction to Biology</h3><p>Discover what biology means and how it helps us understand living things.</p>
+          <a href="#lesson-biology">Open lesson <span>↗</span></a>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-icon blue">🧫</div><p class="card-label">CELL SCIENCE</p>
+          <h3>The Cell</h3><p>Explore the basic unit of life and the parts that help cells function.</p>
+          <a href="#lesson-cell">Open lesson <span>↗</span></a>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-icon yellow">🦋</div><p class="card-label">LIVING THINGS</p>
+          <h3>Characteristics of Life</h3><p>Learn how biologists identify and study living organisms.</p>
+          <a href="#lesson-life">Open lesson <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="quiz-banner" id="quizzes">
+      <div class="quiz-symbol">?</div>
+      <div><p class="eyebrow">PUT YOUR KNOWLEDGE TO THE TEST</p><h2>Ready for a quick science challenge?</h2><p>Try a short biology quiz and see what you know.</p></div>
+      <button class="button button-white" id="start-quiz">Take a quiz <span>→</span></button>
+    </section>
+
+    <section class="quiz-panel" id="quiz-panel" hidden>
+      <div class="quiz-top"><span id="question-count">Question 1 of 3</span><button id="close-quiz" aria-label="Close quiz">✕</button></div>
+      <h3 id="question-text">What is the basic unit of life?</h3>
+      <div id="answer-options" class="answer-options"></div>
+      <p id="quiz-feedback" role="status"></p>
+      <button class="button button-primary" id="next-question" hidden>Next question →</button>
+    </section>
+
+    <section class="section library-section" id="library">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR DIGITAL BOOKSHELF</p><h2>Resources to help you <span>grow.</span></h2></div>
+        <p>Build your science knowledge with accessible study materials and trusted learning links.</p>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card"><div class="resource-art book-art">📗</div><div><p class="card-label">STUDY GUIDES</p><h3>Biology notes & guides</h3><p>Clear revision notes to support your classroom learning.</p><span class="coming-soon">MORE RESOURCES COMING SOON</span></div></article>
+        <article class="resource-card"><div class="resource-art web-art">🌐</div><div><p class="card-label">WEB DIRECTORY</p><h3>Useful science websites</h3><p>A growing collection of places to explore science online.</p><a href="https://www.britannica.com/science/biology" target="_blank" rel="noopener noreferrer">Explore biology reference ↗</a></div></article>
+      </div>
+      <p class="note">BioShelf is an independent learning project. External websites are not owned or operated by BioShelf.</p>
+    </section>
+
+    <section class="section mini-lessons" id="start">
+      <div class="section-heading">
+        <div><p class="eyebrow">START LEARNING TODAY</p><h2>Three ideas worth <span>knowing.</span></h2></div>
+      </div>
+      <div class="mini-grid">
+        <article id="lesson-biology"><span class="mini-number">01 / BASICS</span><h3>What is biology?</h3><p>Biology is the scientific study of life and living organisms, including their structure, function, growth, evolution, and relationships with their environments.</p></article>
+        <article id="lesson-cell"><span class="mini-number">02 / CELLS</span><h3>What is a cell?</h3><p>A cell is the smallest structural and functional unit of an organism. Some organisms consist of one cell, while others are made of many cells.</p></article>
+        <article id="lesson-life"><span class="mini-number">03 / LIFE</span><h3>How do we study life?</h3><p>Biologists investigate processes such as energy use, growth, response to stimuli, reproduction, and how organisms interact with their surroundings.</p></article>
+      </div>
+    </section>
+
+    <section class="founder-section" id="about">
+      <div class="founder-mark">B<span>+</span></div>
+      <div><p class="eyebrow">THE IDEA BEHIND BIOSHELF</p><h2>Science should be <span>within reach.</span></h2><p>BioShelf is a growing science education project founded by a young learner with a big ambition: to make biology easier to discover, understand, and enjoy.</p></div>
+      <a class="button button-primary" href="mailto:hello@bioshelf.example">Contact BioShelf <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">B<span>+</span></span><span>Bio<span class="brand-accent">Shelf</span><small>DISCOVER LIFE.</small></span></a>
+    <p>Discover Life. Understand Science. Shape the Future.</p>
+    <span>© <span id="year"></span> BioShelf · A growing learning project</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
